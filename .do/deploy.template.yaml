@@ -7,3 +7,8 @@ spec:
         repo: demidko/durov
         branch: main
         deploy_on_push: true
+      envs:
+        - key: TOKEN
+          type: SECRET
+        - key: CHANNEL
+          type: SECRET

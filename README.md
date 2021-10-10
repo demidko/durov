@@ -1,12 +1,7 @@
-# Durov — Telegram database
+# Durov
 
-Telegram database. You need bot token and channel id.
-
-## Usage
-
-1. Make sure you are signed in to your GitHub account, then just
-   click [`here`](https://github.com/demidko/service/generate) to use template.
-2. `App.kt` file is entry point.
+Telegram-based database. You need only bot token and channel id (where bot has all admin rights) to
+getting started.
 
 ## Build with Java
 
@@ -14,16 +9,16 @@ Execute `./gradlew clean build`. Your jar will be located at `./build/libs` with
 Now you can run:
 
 ```shell
-java -jar service-all.jar
+TOKEN=... CHANNEL=... java -jar durov-all.jar
 ```
 
 ## Or, build with Docker
 
-Execute `docker build . -t service`. Your image will be located at `docker images -a`. Now you can
+Execute `docker build . -t durov`. Your image will be located at `docker images -a`. Now you can
 run:
 
 ```shell
-docker run -v `pwd`:`pwd` -w `pwd` -it --rm service
+docker  --env TOKEN=...  --env CHANNEL=... run -v `pwd`:`pwd` -w `pwd` -it --rm durov
 ```
 
 ## Deploy

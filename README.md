@@ -1,7 +1,7 @@
 # Durov
 
-Telegram based database. To get started, you only need a bot token and channel ID (where the bot has
-all administrator rights).
+Telegram based embedded database. To get started, you only need a bot token and channel name (where
+the bot has all administrator rights).
 
 ## Download
 

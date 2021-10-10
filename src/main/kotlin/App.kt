@@ -1,11 +1,17 @@
+import com.github.kotlintelegrambot.bot
+import com.github.kotlintelegrambot.dispatch
+import com.github.kotlintelegrambot.dispatcher.message
+import com.github.kotlintelegrambot.entities.ChatId
+import com.github.kotlintelegrambot.entities.ChatId.Companion.fromId
 import java.lang.System.getenv
 
-val token = getenv("TOKEN")
 
-val channel = getenv("channel")
+class Durov(val token: String, val channel: String) {
+
+}
 
 fun main() {
-  bot {
+  val bot = bot {
     token = getenv("TOKEN")
     dispatch {
       message {
@@ -14,5 +20,6 @@ fun main() {
       }
     }
   }
+
 }
 

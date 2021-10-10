@@ -10,15 +10,5 @@ import org.junit.jupiter.api.Test
 
 class AppKtTest {
 
-  @Test
-  @Disabled
-  fun testLocalhostServer() {
-    localhostServer().start(false)
-    val answer = runBlocking {
-      HttpClient().use {
-        it.get<HttpStatusCode>()
-      }
-    }
-    assertThat(answer).isEqualTo(OK)
-  }
+
 }

@@ -9,14 +9,21 @@ import java.io.File
 import java.lang.System.getenv
 
 
-
 /**
  * Telegram-based embedded database
  */
-class Durov(val bot: Bot, val channel: ChatId) {
+class Durov(private val bot: Bot, private val channel: ChatId) {
 
   fun save(description: String, file: File) {
-    bot.sendDocument(channel, file, description);
+    val x = bot.getChat(channel).get()
+
+    val message = bot.sendDocument(channel, file, description).first
+    if (message?.isSuccessful == true) {
+      val id = message.body()?.result?.document?.fileId
+      if (id != null) {
+
+      }
+    }
   }
 }
 
@@ -39,6 +46,6 @@ fun main() {
       }
     }
   }
-
+  bot.downloadFile()
 }
 

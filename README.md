@@ -2,7 +2,7 @@
 
 Telegram based embedded database library. To get started, you only need a bot token and channel
 name (where the bot has all administrator rights). The bot stores the identifier of the key file in
-the channel description.
+the channel description. **Do not change channel description!**
 
 ## Download
 

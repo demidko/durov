@@ -1,9 +1,9 @@
 spec:
-  name: service
+  name: durov
   services:
     - name: backend
       dockerfile_path: Dockerfile
       github:
-        repo: demidko/service
+        repo: demidko/durov
         branch: main
         deploy_on_push: true

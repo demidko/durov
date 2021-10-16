@@ -48,17 +48,17 @@ class Durov(val bot: Bot, val channel: ChatId) : Closeable {
  * @param channelName Important! Do not change channel description!
  * @see <a href="https://core.telegram.org/bots/faq#handling-media">Telegram Bots API limits</a>
  */
-fun Durov(token: String, channelName: String): Durov {
-  val bot = bot { this.token = token }
-  return Durov(bot, fromChannelUsername(channelName))
-}
+fun Durov(botToken: String, channelName: String) = Durov(
+  bot { token = botToken },
+  fromChannelUsername(channelName)
+)
 
 /**
  * Immutable database based on Telegram channels.
  * @param channelId Important! Do not change channel description!
  * @see <a href="https://core.telegram.org/bots/faq#handling-media">Telegram Bots API limits</a>
  */
-fun Durov(token: String, channelId: Long): Durov {
-  val bot = bot { this.token = token }
-  return Durov(bot, fromId(channelId))
-}
+fun Durov(botToken: String, channelId: Long) = Durov(
+  bot { token = botToken },
+  fromId(channelId)
+)

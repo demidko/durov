@@ -1,8 +1,8 @@
 # Durov
 
-Telegram-based free cloud. To get started, you only need a bot token and channel name
-(or id) where the bot has all administrator rights. The bot stores the identifier of the key file in
-the channel description. **Do not change channel description!**
+Telegram cloud client. To get started, you need the channel
+(name or id) where your bot has all administrator rights. **Do not change channel description!** The
+bot stores the identifier of the keystore in the channel description.
 
 ## Download
 

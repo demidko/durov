@@ -1,8 +1,8 @@
 # Durov
 
-Telegram cloud client. To get started, you need the channel
-(name or id) where your bot has all administrator rights. **Do not change channel description!** The
-bot stores the identifier of the keystore in the channel description.
+Telegram cloud client. You need a channel (name or ID) in which your bot has full administrator
+rights. **Do not change the channel description!** The bot stores the keystore identifier in the
+channel description.
 
 ## Download
 
